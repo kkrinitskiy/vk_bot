@@ -1,6 +1,6 @@
-package com.example.demo.services;
+package com.kkrinitskiy.bot.services;
 
-import com.example.demo.messageHandling.MessagesHandler;
+import com.kkrinitskiy.bot.messageHandling.MessagesHandler;
 import com.vk.api.sdk.client.VkApiClient;
 import com.vk.api.sdk.client.actors.GroupActor;
 import com.vk.api.sdk.objects.callback.MessageNew;

@@ -1,6 +1,6 @@
-package com.example.demo.utils;
+package com.kkrinitskiy.bot.utils;
 
-import com.example.demo.services.TextGeneratorService;
+import com.kkrinitskiy.bot.services.TextGeneratorService;
 import com.vk.api.sdk.actions.Users;
 import com.vk.api.sdk.client.VkApiClient;
 import com.vk.api.sdk.client.actors.GroupActor;

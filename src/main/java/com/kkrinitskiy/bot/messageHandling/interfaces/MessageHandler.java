@@ -1,4 +1,4 @@
-package com.example.demo.messageHandling.interfaces;
+package com.kkrinitskiy.bot.messageHandling.interfaces;
 
 import com.vk.api.sdk.exceptions.ApiException;
 import com.vk.api.sdk.exceptions.ClientException;

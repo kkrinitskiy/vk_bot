@@ -1,6 +1,6 @@
-package com.example.demo.aspects;
+package com.kkrinitskiy.bot.aspects;
 
-import com.example.demo.services.OnOffService;
+import com.kkrinitskiy.bot.services.OnOffService;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

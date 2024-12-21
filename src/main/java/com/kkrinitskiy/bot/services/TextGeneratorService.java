@@ -1,4 +1,4 @@
-package com.example.demo.services;
+package com.kkrinitskiy.bot.services;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
