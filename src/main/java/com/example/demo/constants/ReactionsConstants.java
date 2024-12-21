@@ -1,0 +1,43 @@
+package com.example.demo.constants;
+
+public class ReactionsConstants {
+    public static final int LIKE = 1;
+    public static final int FIRE = 2;
+    public static final int LOL = 3;
+    public static final int THUMB_UP = 4;
+    public static final int SHIT = 5;
+    public static final int QUESTIONS = 6;
+//    public static final int FIRE = 7;
+//    public static final int FIRE = 8;
+//    public static final int FIRE = 9;
+//    public static final int FIRE = 10;
+//    public static final int FIRE = 11;
+    public static final int HMMMM = 12;
+//    public static final int FIRE = 13;
+//    public static final int FIRE = 15;
+//    public static final int FIRE = 16;
+    public static final int CLOWN = 17;
+    public static final int HANDS_SHAKE = 18;
+//    public static final int FIRE = 30;
+//    public static final int FIRE = 31;
+//    public static final int FIRE = 20;
+    public static final int BASE = 21;
+    public static final int DEVIL = 39;
+//    public static final int FIRE = 40;
+//    public static final int FIRE = 22;
+//    public static final int FIRE = 23;
+//    public static final int FIRE = 24;
+//    public static final int FIRE = 64;
+    public static final int CLAP = 26;
+//    public static final int FIRE = 42;
+//    public static final int FIRE = 27;
+//    public static final int FIRE = 19;
+//    public static final int FIRE = 32;
+    public static final int MOON = 34;
+//    public static final int FIRE = 35;
+//    public static final int FIRE = 36;
+//    public static final int FIRE = 37;
+//    public static final int FIRE = 38;
+//    public static final int FIRE = 28;
+//    public static final int FIRE = 29;
+}
