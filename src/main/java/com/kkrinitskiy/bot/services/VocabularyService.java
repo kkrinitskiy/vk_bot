@@ -1,4 +1,4 @@
-package com.example.demo.services;
+package com.kkrinitskiy.bot.services;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;

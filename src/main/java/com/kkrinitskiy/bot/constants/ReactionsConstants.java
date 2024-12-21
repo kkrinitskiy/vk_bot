@@ -1,4 +1,4 @@
-package com.example.demo.constants;
+package com.kkrinitskiy.bot.constants;
 
 public class ReactionsConstants {
     public static final int LIKE = 1;

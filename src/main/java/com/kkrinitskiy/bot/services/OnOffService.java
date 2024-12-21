@@ -1,4 +1,4 @@
-package com.example.demo.services;
+package com.kkrinitskiy.bot.services;
 
 import org.springframework.stereotype.Service;
 

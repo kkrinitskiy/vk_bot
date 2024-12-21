@@ -1,6 +1,6 @@
-package com.example.demo.controllers;
+package com.kkrinitskiy.bot.controllers;
 
-import com.example.demo.services.CallbackService;
+import com.kkrinitskiy.bot.services.CallbackService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -1,4 +1,4 @@
-package com.example.demo.configurations;
+package com.kkrinitskiy.bot.configurations;
 
 import com.vk.api.sdk.client.TransportClient;
 import com.vk.api.sdk.client.VkApiClient;
