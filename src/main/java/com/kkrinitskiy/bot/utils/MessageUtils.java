@@ -94,4 +94,9 @@ public class MessageUtils {
             log.info(response.getFirstName());
         });
     }
+
+    public void sendMessageToGroup(MessageNew message,String string) throws ClientException, ApiException {
+        vk.messages().sendDeprecated(groupActor).message(string).peerId(message.getObject().getMessage().getPeerId()).randomId(new Random().nextInt(10000)).execute();
+
+    }
 }

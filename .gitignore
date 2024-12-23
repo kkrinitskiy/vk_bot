@@ -36,6 +36,7 @@ out/
 ### VS Code ###
 .vscode/
 
-resources/.env
-resources/*.json
-resources/*.txt
+!**/src/main/resources/.env
+!**/src/main/resources/*.json
+!**/src/main/resources/*.txt
+plans.md
