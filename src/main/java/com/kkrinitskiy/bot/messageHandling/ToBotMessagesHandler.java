@@ -1,7 +1,6 @@
 package com.kkrinitskiy.bot.messageHandling;
 
 import com.kkrinitskiy.bot.messageHandling.interfaces.AbstractMessageHandler;
-import com.kkrinitskiy.bot.models.weatherModels.WeatherApiResponse;
 import com.kkrinitskiy.bot.services.OnOffService;
 import com.kkrinitskiy.bot.services.WeatherService;
 import com.vk.api.sdk.exceptions.ApiException;
@@ -29,16 +28,8 @@ public class ToBotMessagesHandler extends AbstractMessageHandler {
             onOffService.turnOn();
         }
         if (text.contains("[club%d|@%s]".formatted(groupInfo.getId(), groupInfo.getScreenName()))
-            && text.contains("погода")){
-            WeatherApiResponse weather = weatherService.getWeather();
-            StringBuilder stringBuilder = new StringBuilder();
-            weather.getList().forEach(weatherItem -> {
-                stringBuilder.append("погода на: ").append(weatherItem.getDtTxt()).append("\n");
-                stringBuilder.append("\tтемпература: ").append(weatherItem.getMain().getTemp()).append("\n");
-                stringBuilder.append("\tчувствуется как: ").append(weatherItem.getMain().getFeelsLike()).append("\n");
-                stringBuilder.append("\t").append(weatherItem.getWeather().get(0).getDescription()).append("\n\n");
-            });
-            messageUtils.sendMessageToGroup(message, stringBuilder.toString());
+            && text.toLowerCase().contains("погода")){
+            messageUtils.sendMessageToGroup(message, weatherService.getCurrentWeather());
             return;
         }
         if(onOffService.getState()) {

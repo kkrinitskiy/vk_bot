@@ -18,6 +18,8 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Random;
 
+import static com.kkrinitskiy.bot.utils.KeyboardUtils.getKeyboard;
+
 @Component
 @Slf4j
 public class MessageUtils {
@@ -70,7 +72,7 @@ public class MessageUtils {
     public void sendRandomTextToGroup(MessageNew message) throws ApiException, ClientException {
 //        TODO проверку on/off убрать в аспект
         if (new Random().nextInt(100) >= 80) {
-            vk.messages().sendDeprecated(groupActor).message(textGeneratorService.getRandomText()).peerId(message.getObject().getMessage().getPeerId()).randomId(new Random().nextInt(10000)).execute();
+            vk.messages().sendDeprecated(groupActor).message(textGeneratorService.getRandomText()).keyboard(getKeyboard()).peerId(message.getObject().getMessage().getPeerId()).randomId(new Random().nextInt(10000)).execute();
         }
     }
 
@@ -95,8 +97,7 @@ public class MessageUtils {
         });
     }
 
-    public void sendMessageToGroup(MessageNew message,String string) throws ClientException, ApiException {
-        vk.messages().sendDeprecated(groupActor).message(string).peerId(message.getObject().getMessage().getPeerId()).randomId(new Random().nextInt(10000)).execute();
-
+    public void sendMessageToGroup(MessageNew message, String string) throws ClientException, ApiException {
+        vk.messages().sendDeprecated(groupActor).message(string).keyboard(getKeyboard()).peerId(message.getObject().getMessage().getPeerId()).randomId(new Random().nextInt(10000)).execute();
     }
 }

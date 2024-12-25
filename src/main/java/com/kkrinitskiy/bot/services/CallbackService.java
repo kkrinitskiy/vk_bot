@@ -25,6 +25,8 @@ public class CallbackService extends com.vk.api.sdk.events.callback.CallbackApi 
         messagesHandler.processMessage(message);
     }
 
+
+
     @Override
     public String parse(String json) {
 //        CallbackMessage callbackMessage = new GsonHolder().getGson().fromJson(json, CallbackMessage.class);
